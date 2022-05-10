@@ -41,7 +41,7 @@ playerBet.addEventListener ('click',
             document.querySelector('.you .dice i').style.transform = "scale(1.5)";
             document.querySelector('.cpu .dice i').style.transform = "scale(1.5)";
 
-            document.querySelector('header h1').innerHTML = "EVEN";
+            document.querySelector('header h1').innerHTML = "DRAW";
         }
     }
 )
