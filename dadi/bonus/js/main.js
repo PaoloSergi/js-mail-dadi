@@ -19,7 +19,7 @@ for (let i=1; i<=6; i++){
 
             do {
                 cpuNumber = Math.floor((Math.random()*10) + 1);
-            } while (cpuNumber >=6);
+            } while (cpuNumber > 6);
 
             let cpuDice = document.querySelector(`.cpu .dice`).innerHTML = dices[cpuNumber - 1];
 
@@ -39,7 +39,6 @@ for (let i=1; i<=6; i++){
                 document.querySelector('.cpu .dice i').style.transform = "scale(1.5)";
 
                 document.querySelector('header h1').innerHTML = "EVEN";
-
             }
         }
     )

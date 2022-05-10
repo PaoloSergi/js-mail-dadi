@@ -7,7 +7,6 @@ const diceSix = '<i class="fas fa-dice-six"></i>';
 
 const dices = [diceOne, diceTwo, diceThree, diceFour, diceFive, diceSix];
 
-
 const playerBet = document.querySelector(`.bet .dice .play`);
 
 playerBet.addEventListener ('click',
@@ -18,11 +17,11 @@ playerBet.addEventListener ('click',
         
         do {
             playerNumber = Math.floor((Math.random()*10) + 1);
-        } while (playerNumber >=6);
+        } while (playerNumber > 6);
 
         do {
             cpuNumber = Math.floor((Math.random()*10) + 1);
-        } while (cpuNumber >=6);
+        } while (cpuNumber > 6);
 
         let playerDice = document.querySelector(`.you .dice`).innerHTML = dices[playerNumber - 1];
         let cpuDice = document.querySelector(`.cpu .dice`).innerHTML = dices[cpuNumber - 1];
@@ -43,7 +42,6 @@ playerBet.addEventListener ('click',
             document.querySelector('.cpu .dice i').style.transform = "scale(1.5)";
 
             document.querySelector('header h1').innerHTML = "EVEN";
-
         }
     }
 )

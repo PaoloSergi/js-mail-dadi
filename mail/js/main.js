@@ -10,7 +10,7 @@ loginButton.addEventListener("click",
         let userEmail = inputEmail.value;
         let accessPermit = false;
         
-        for (i=0; i<registeredUsersEmails.length; i++){
+        for (i=0; i<registeredUsersEmails.length && accessPermit === false; i++){
             if(userEmail === registeredUsersEmails[i]){
                 accessPermit = true;
             }
